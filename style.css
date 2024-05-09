@@ -1,0 +1,919 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+.watsapp{
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+
+}
+.watsapp button{
+    background-color: #1DD332;
+    color: white;
+    padding: 10px 30px;
+    font-size: 17px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+.header_top{
+    background-color: #373737;
+    color: white;
+    display: flex;
+    justify-content: end;
+    padding: 7px  120px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.header_top a{
+    color: white;
+}
+.icons{
+    margin-left: 50px;
+}
+.icons i{
+   padding: 0 12px;
+}
+.header_bottom{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    background-color: white;
+    justify-content: end;
+   
+}
+.header_img{
+    width: 290px;
+    position: absolute;
+    top:-22px ;
+    left: 0;
+    background-color: white;
+}
+.header_img img{
+     width: 100%;
+     margin-top: 10px;
+}
+.header_menu{
+     
+      right: 0;
+      
+}
+.header_menu > ul{
+     display: flex;
+     ;
+     padding-right: 100px;
+}
+.header_menu > ul > li{
+    padding: 20px 10px;
+    font-size: 12px;
+    position: relative;
+}
+.header_menu > ul > li i{
+    font-size: 8px;
+}
+.header_menu a{
+    color: black;
+}
+.corner{
+    height: 34px;
+    width: 20px;
+    background-color: #373737;
+    position: absolute;
+    top: -14px;
+    left: -3px;
+    transform: rotate(50deg);
+}
+.right_corner{
+    height: 34px;
+    width: 20px;
+    background-color: #373737;
+    position: absolute;
+    top: -14px;
+    right: -3px;
+    transform: rotate(-50deg);
+}
+.menu_inner1{
+    padding: 10px 20px;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s 0.5s;
+
+}
+.menu_inner1 > ul{
+    background-color: white;
+}
+.menu_inner1 > li{
+    padding: 17px 10px;
+    border-bottom: 2px solid skyblue;
+    background-color: white;
+    width: 200px;
+   
+}
+.menu_inner1:last-child(li) {
+    border-bottom: none;
+}
+.header_menu > ul > li:hover .menu_inner1{
+    visibility: visible;
+    opacity: 1;
+}
+.submenu1{
+    position: absolute;
+    right: -200px;
+    bottom: -146px;
+   
+    background-color: white;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.4s;
+
+}
+.submenu1 > li{
+    width: 200px;
+    padding: 18px 10px;
+    border-bottom: 2px solid skyblue;
+}
+
+.menu_inner1 >li:hover .submenu1{
+    visibility: visible;
+    opacity: 1;
+
+}
+.inner2{
+    width: 650px;
+    background-color: white;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    left: -141px;
+}
+.inner2 > li{
+     width:100px; 
+     width: 20%;  
+     padding: 15px 10px; 
+     margin-left: 10px;
+
+}
+.inner3{
+    width: 650px;
+    padding: 12px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    left: -234px;
+  
+}
+.inner3 > li{
+    width: 75px;
+    padding-top: 10px;
+
+}
+.inner4{
+    font-size: 10px;
+    font-weight: normal;
+    left: -15px;
+}
+.inner5{
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    left: -460px;
+    font-size: 13px;
+    padding:5px 20px;
+    height: 570px;
+    position: absolute;
+    border: none !important;
+    background-color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s 0.4s;
+}
+
+.inner5 > li{
+    width: 25%;
+    padding: 25px;
+    line-height: 30px;
+
+}
+
+.inner6{
+    left: -17px;
+}
+.further_inner{
+    position: absolute;
+    
+}
+.header_menu > ul > li:hover .inner5{
+    visibility: visible;
+    opacity: 1;
+}
+.border{
+    border: 1px solid skyblue;
+}
+.banner{
+    background-image:url('images/jodhpur-1215239.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner_inner{
+    width: 1170px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 110px;
+    text-align: center;
+}
+.banner h1{
+    font-size: 38px;
+    color: white;
+}
+.banner_inner p{
+    color: white;
+    font-size: 23px;
+}
+.content{
+    width: 100%;
+    background-color:#ffffff4a ;
+    border: 0.5px solid rgb(215, 240, 234);
+    padding: 10px;
+   
+}
+.arrow_right,
+.arrow_left{
+    background-color:#ffffff7a;
+    padding: 10px;
+}
+.contant_btns{
+    text-align: left;
+    
+    border-bottom: 1px solid white;
+}
+.contant_btns button{
+     padding: 15px;
+     border: none;
+     border-radius: 5px 5px 0 0;
+     font-size: 16px;
+     margin-left: 5px;
+     
+}
+.active{
+    background-color: #009ddc;
+    color: white;
+}
+.contant_inpts{
+    text-align: left;
+    padding-top: 20px;
+    font-size: 20px;
+    
+}
+.contant_inpts input{
+    padding:5px 10px;
+    font-size: 15px;
+    color: #555;
+}
+.contant_inpts select{
+    width: 460px;
+    padding:5px 10px;
+    font-size: 15px;
+    color: #555;
+}
+.contant_inpts button{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #009ddc;
+    color: white;
+    font-size: 15px;
+    margin-left: 30px;
+
+}
+.contant_inpts button i{
+    margin-right: 5px;
+}
+.welcome{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+
+}
+.welcome_contant{
+    padding: 0 20px;
+    line-height: 25px;
+
+    
+}
+.wel_hed h2{
+ font-family: philosopherbold;
+}
+.wel_p{
+    color: #555;
+}
+.wel_p a{
+    color: #337ab7;
+    font-weight: bold;
+    transition: o.1;
+}
+.wel_p a:hover{
+    text-decoration: underline;
+    color: rgb(2, 19, 105);
+}
+.wel_img{
+    padding: 20px 0;
+}
+.wel_btn button{
+    margin-top: 20px;
+   padding: 13px 23px;
+   font-size: 15px;
+   font-weight: bold;
+   background-color: #3e3e3e;
+   color: white;
+   border: none;
+   transition: 0.5s;
+  
+}
+.wel_btn button:hover {
+    background-color: #009ddc;
+    cursor: pointer;
+}
+.Experience{
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0 ;
+}
+.exp_hed h1{
+    font-family: philosopherbold;
+    font-size: 35px;
+    color: #333333;
+}
+.exp_img{
+    padding-top: 50px;
+}
+.exp_p p{
+    padding: 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.toyota{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 100px ;
+   
+}
+.car_img{
+    width: 250px;
+}
+.car_img img{
+    width: 100%;
+}
+.card_name h4{
+    font-family: philosopherbold;
+    font-size: 19px;
+    padding: 10px;
+}
+.toyota_car{
+     padding: 0 20px;
+     width: 20%;
+}
+.car_card{
+    text-align: center;
+    font-size: 15px;
+}
+.card_list{
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+}
+.journey{
+    background-color: #F1F3F6;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    
+}
+.journey_cont{
+    width: 50%;
+    padding: 50px 20px;
+}
+.journey_cont h1{
+    font-family:philosopherbold ;
+    font-size: 40px;
+}
+.journey_cont span{
+    color: lightslategrey;
+    margin: 10px 0;
+}
+.journey_cont p{
+  color: dimgray;
+  line-height: 20px;
+}
+.journey_img{
+    width: 40%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    margin-left: 30px;
+}
+
+
+.jimg2{
+   width: 43%;
+  height: 73%;
+  
+}
+.jimg1 {
+ width: 43%;
+ height: 73%;
+}
+.jimg1 img{
+    width: 100%;
+    height: 100%;
+    margin-right: 5px;
+}
+.jimg2 img{
+    width: 100%;
+    height: 100%;
+}
+.popular{
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+.popular h1{
+    font-family:philosopherbold ;
+}
+.popular img{
+    padding: 30px;
+}
+.destination{
+    width: 1170px;
+    margin: auto; 
+    display: flex;
+}
+.destination_div{
+    width: 50%;
+    display: flex;
+    padding-bottom: 25px;
+}
+
+
+.inner5 > li > a{
+    border-bottom: 1px solid skyblue;
+    padding-bottom: 10px;
+}
+
+
+
+.destination_img{
+    width: 45%;
+    height: 430px;
+}
+.destination_img img{
+    width: 100%;
+    height: 100%;
+}
+.destination_cont{
+    width: 55%;
+    text-align: center;
+    padding: 20px 25px;
+}
+.destination_cont h1{
+    font-family:philosopherbold ;
+    font-size: 50px;
+} 
+.destination_cont p{ 
+    padding: 10px 0;
+    line-height: 25px;
+    
+}
+.destination_cont button{
+    padding: 14px 26px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #3e3e3e;
+    color: white;
+    border: none;
+    transition: 1s;
+}
+.destination_cont button:hover{
+    background-color: #009ddc;
+    cursor: pointer;
+}
+.certified{
+    background-image: linear-gradient(112deg, #282828 44%, #01a0de 66%);
+    margin: 100px 0;
+    display: flex;
+}
+.certified_left{
+    text-align: center;
+    padding: 60px 20px;
+    width: 60%;
+}
+.certified_left h2{
+    color: white;
+    font-size: 26px;
+    font-family:philosopherbold ;
+}
+.certified_left p{
+    color: white;
+    padding: 20px 10px;
+    line-height: 23px;
+}
+
+.certified_right{
+    width: 40%;
+    padding: 10px 20px;
+    display: flex;
+}
+.c_right_img{
+    height: 220px;
+    width: 220px;
+}
+.c_right_img img{
+    width: 100%;
+    height:100%;
+}
+.c_right_cont{
+    padding-left: 20px;
+}
+.whychoose {
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+}
+.whychoose h1{
+    font-family:philosopherbold ;
+}
+.whychoose img{
+    padding: 30px 0;
+}
+.whychoose p{
+    font-size: 18px;
+    color: #4f4f4f;
+    line-height: 30px;
+}
+
+.whychoose_car{
+    width: 1170px;
+    margin: auto;
+    padding: 50px 0;
+}
+.car_uppersec{
+    width: 950px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.color_div{
+ 
+    width: 150px;
+    text-align: center;
+}
+.color_div p{
+   font-weight:bold;
+   color: #4f4f4f;
+   font-size: 17px;
+   line-height: 22px;
+   padding: 5px 0;
+}
+.color_car_img{
+  width: 120px;
+  height: 120px;
+
+}
+.color_car_img img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    margin-left: 13px;
+}
+
+.down{
+    padding-top: 40px;
+}
+.color_car_img img:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+.car_lowersec{
+    width: 1050px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.car_lowersec_middle{
+    width: 550px;
+}
+.car_lowersec_middle img{
+    width: 100%;
+}
+.lower_down{
+    padding-top: 10px;
+}
+.discover{
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+}
+.discover h2{
+    font-family:philosopherbold ;
+}
+.discover img{
+     padding: 30px 0;
+}
+.historical{
+    display: flex;
+    justify-content: space-around;
+  
+    
+}
+.historical_img{
+    width: 35%;
+    border-radius: 10px;
+  
+}
+.historical_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.historical_cont{
+    width:60% ;
+    background-color: #848B97;
+    color: white;
+    border-radius: 10px;
+    box-shadow: -0.5px 4px 3px 1px #707070;
+   
+}
+.historical_cont h1 {
+    font-family:philosopherbold ;
+    padding: 10px 15px;
+}
+.historical_text{
+    width: 600px;
+    padding: 0  15px;
+    margin-bottom: 10px;
+}
+.historical_text p{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 18px;
+}
+.services{
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.services h2{
+    font-family:philosopherbold ;
+   
+}
+.services img{
+    padding: 20px;
+}
+.extra{
+    width: 20%;
+}
+.secound{
+    display: flex;
+    justify-content: right;
+    padding: 0 10px;
+    padding-bottom: 50px;
+}
+.taxi{
+    width: 240px;
+    padding: 0 20px;
+}
+.taxi_img{
+   
+    height: 300px;
+    background-image: url('images/jaisalmer.webp');
+    background-size: cover;
+    background-position: center;
+}
+.taxi_img img{
+    width: 100%;
+    height: 100%;
+   
+}
+.taxi_cont{
+    background-color: #28292E;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+     font-size: 14px;
+}
+.taxi_img1{
+    background-image: url('images/Feature-City-Palace-Udaipur-Rajasthan.jpg');
+}
+.taxi_img2{
+    background-image: url('images/junagarh-fort-bikaner-rajasthan-1024x733-1.jpg');
+}
+.taxi_img3{
+    background-image: url('images/Jodhpur-sightseeing-tour\ \(1\).jpg');
+}
+.secound1{
+    justify-content: left;
+}
+.taxi_imga{
+    background-image:url('images/Jaipur-Rajasthan.jpg');
+}
+.taxi_imgb{
+    background-image: url('images/jaisalmer-fort-rajasthan.jpg');
+}
+.taxi_imgc{
+    background-image: url('images/mansoon-palace-udaipur-head.jpg');
+}
+.taxi_imgd{
+    background-image: url('images/Bikaner-Tourism-2023_-Best-of-Bikaner-India-Tripadvisor-min.png');
+}
+.jcrcab_service{
+    padding:100px 10px ;
+      display: flex;
+      justify-content: space-between;
+}
+.jcrcab{
+    width: 300px;
+    text-align: center;
+}
+.jcrcab_cont{
+    padding: 20px 0;
+}
+.jcrcab_cont h3{
+    font-family:philosopherbold ;
+    color: #4C4C4C;
+    padding: 10px 0;
+}
+.jcrcab_cont p{
+    color: #5E5E5E;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: start;
+}
+.jcrcab_img1{
+   padding: 25px 0;
+   width: 100%;
+}
+.jcrcab_img1 img{
+    width: 100%;
+}
+
+.jcrcab_img img{
+    width: 100%;
+}
+.jcrcab_img2{
+    padding-top: 30px ;
+    margin-bottom: 25px;
+}
+.jcrcab_img2 img{
+    height: 100%;
+    width: 100%;
+}
+.partner_cab{
+    background-color: #F5F5F5;
+}
+.partner_main{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.partner_head{
+    text-align: center;
+    padding: 30px 0;
+}
+.partner_head h1{
+    font-family:philosopherbold ;
+    font-size: 35px;
+    color: #333333;
+
+}
+.parter_img{
+    width: 140px;
+    height: 60px;
+    background-color: white;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid rgb(236, 236, 236);
+}
+.parter_img img{
+    width: 100%;
+    height: 100%;
+}
+.partner_f{
+    background-image: url('images/g20-bg.jpg');
+    background-position: bottom;
+    height: 100px;
+
+}
+.partner_fmain{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    margin-top: 40px;
+    justify-content:space-around;
+   
+}
+.p_text_1{
+    width: 80%;
+    margin-top: 20px;
+   margin-left: 50px;
+}
+.p_text{
+    width: 20%;
+    height: 100px;
+    margin-right: 120px;
+   
+}
+.p_text img{
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    background-color: #28292E;
+  
+}
+.footer_main{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    padding: 50px 0;
+    border-bottom: 1px solid #5E5F62;
+
+ 
+}
+.footer_part{
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 330px;
+    padding: 20px 0;
+   
+}
+
+.footer_img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.footer_img img {
+    width: 100%;
+    height: 100%;
+}
+.footer_text{
+    color: white;
+    font-size: 11px;
+    line-height: 15px;
+}
+.Footer_last{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 50px;
+}
+.last_logo img{
+     width:200px ;
+     
+}
+.last_logo .footer_img{
+    margin-right: 110px;
+}
+.last_logo .footer_text a i{
+     width: 20px;
+     margin-left: 10px;
+     font-size: 17px;
+
+}
